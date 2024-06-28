@@ -1,3 +1,5 @@
+// components/Header.js
+
 const Header = () => {
     return (
       <header className="bg-white py-4">
@@ -7,23 +9,23 @@ const Header = () => {
             <img src="/logo.png" alt="LAGCCR Logo" className="h-60" />
           </div>
   
-          {/* Navegación */}
+          {/* Navigation */}
           <nav>
             <ul className="flex space-x-4">
               <li>
-                <a href="#" className="text-gray-800 hover:text-gray-600">Inicio</a>
+                <a href="#" className="text-gray-800 hover:text-teal-500 transition-colors duration-300">Home</a>
               </li>
               <li>
-                <a href="#" className="text-gray-800 hover:text-gray-600">Sobre Nosotros</a>
+                <a href="#" className="text-gray-800 hover:text-teal-500 transition-colors duration-300">About Us</a>
               </li>
               <li>
-                <a href="#" className="text-gray-800 hover:text-gray-600">Servicios</a>
+                <a href="#" className="text-gray-800 hover:text-teal-500 transition-colors duration-300">Services</a>
               </li>
               <li>
-                <a href="#" className="text-gray-800 hover:text-gray-600">Equipo</a>
+                <a href="#" className="text-gray-800 hover:text-teal-500 transition-colors duration-300">Team</a>
               </li>
               <li>
-                <a href="#" className="text-gray-800 hover:text-gray-600">Contacto</a>
+                <a href="#" className="text-gray-800 hover:text-teal-500 transition-colors duration-300">Contact</a>
               </li>
             </ul>
           </nav>
