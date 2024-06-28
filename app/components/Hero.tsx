@@ -40,7 +40,7 @@ const HeroSection = () => {
             market research, and bilateral relations.
           </p>
           <a
-            href="https://calendly.com/lagccr/30min"
+            href="https://calendly.com/lagccr/30min" target="_blank"
             className="mt-4 bg-teal-200 hover:bg-teal-400 text-black py-3 px-8 rounded-lg text-lg font-semibold transition duration-300 inline-flex items-center"
           >
             <FaCalendarAlt className="mr-2" />
