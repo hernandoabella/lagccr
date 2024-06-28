@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <section className="py-20">
+    <section className="py-20 bg-white">
       <div className="container mx-auto text-center">
         <h1 className="font-bold py-3 text-5xl">Trade Facilitation</h1>
         <h2 className="text-3xl font-bold mb-4">
