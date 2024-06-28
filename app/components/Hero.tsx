@@ -17,7 +17,7 @@ const HeroSection = () => {
           </p>
           <a
             href="https://calendly.com/lagccr/30min"
-            className="bg-teal-200 hover:bg-teal-400 py-3 px-8 rounded-lg text-lg font-semibold transition duration-300 inline-flex items-center"
+            className="mt-4 bg-teal-200 hover:bg-teal-400 py-3 px-8 rounded-lg text-lg font-semibold transition duration-300 inline-flex items-center"
           >
             <FaCalendarAlt className="mr-2" />
             Book an Appointment
