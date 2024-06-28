@@ -1,29 +1,35 @@
 // components/TeamSection.tsx
 
 const TeamSection = () => {
-  // Sample team data (replace with actual data)
+  // Datos del equipo
   const teamMembers = [
     {
       name: "John Doe",
       position: "CEO",
       description:
         "John Doe is the co-founder and CEO of LAGIR. He has over 15 years of experience in international trade facilitation.",
-      image: "/images/team-member-1.jpg", // Replace with actual image path
+      image: "/team1.jpg", // Reemplazar con la ruta real de la imagen
     },
     {
       name: "Jane Smith",
       position: "COO",
       description:
         "Jane Smith is the Chief Operating Officer at LAGIR. She oversees daily operations and strategic initiatives.",
-      image: "/images/team-member-2.jpg", // Replace with actual image path
+      image: "/team2.jpg", // Reemplazar con la ruta real de la imagen
     },
-    // Add more team members as needed
+    {
+      name: "Emily Johnson",
+      position: "CFO",
+      description:
+        "Emily Johnson is the Chief Financial Officer at LAGIR. She is responsible for managing the financial actions of the company.",
+      image: "/team3.jpg", // Reemplazar con la ruta real de la imagen
+    },
   ];
 
   return (
     <section className="py-20 bg-gray-100">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-12">Our Team</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {teamMembers.map((member, index) => (
             <div
