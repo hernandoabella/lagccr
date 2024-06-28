@@ -91,7 +91,7 @@ const ContactForm = () => {
         </div>
       </div>
 
-      <div className="py-8">
+      <div className="pt-20">
         <div className="container mx-auto text-center">
           <p className="mb-4">© Copyright. All rights reserved.</p>
           <div className="flex justify-center space-x-6">
