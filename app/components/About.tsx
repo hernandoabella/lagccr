@@ -35,7 +35,7 @@ const AboutUsSection = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row items-center md:justify-between gap-10">
+        <div className="flex flex-col md:flex-row items-center md:justify-between gap-20">
           {/* History */}
           <div className="md:w-1/2 mb-8 md:mb-0 bg-white rounded-lg shadow-lg overflow-hidden">
             {/* Image */}
