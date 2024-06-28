@@ -37,37 +37,49 @@ const AboutUsSection = () => {
 
         <div className="flex flex-col md:flex-row items-center md:justify-between gap-10">
           {/* History */}
-          <div className="md:w-1/2 mb-8 md:mb-0">
-            <h3 className="text-3xl font-bold">History</h3>
-            <div>
-              <img
-                src="/history.jpg"
-                alt="History Image"
-                className="w-full h-full my-5"
-              />
-            </div>
-            <div className="flex items-center">
-              <p className="text-lg">
-                In 2023, LAGIR arose from the need to facilitate foreign trade
-                between LATAM and GCC. It was the result of several studies that
-                the team of co-founders researchers made in order to promote the
-                bi-lateral generation of cargo.
+          <div className="md:w-1/2 mb-8 md:mb-0 bg-white rounded-lg shadow-lg overflow-hidden">
+            {/* Image */}
+            <img
+              src="/history.jpg"
+              alt="History Image"
+              className="w-full h-84 object-cover"
+            />
+
+            {/* Content */}
+            <div className="p-6">
+              {/* Title */}
+              <h3 className="text-3xl font-bold mb-4 text-teal-500">
+                Our History
+              </h3>
+
+              {/* Description */}
+              <p className="text-lg text-gray-700 leading-relaxed">
+                In 2023, LAGIR was founded to streamline foreign trade
+                operations between LATAM and GCC. It originated from extensive
+                research conducted by our team of co-founders, aimed at
+                enhancing bilateral cargo generation.
               </p>
             </div>
           </div>
 
           {/* Vision */}
-          <div className="md:w-1/2">
-            <h3 className="text-3xl font-bold">Vision</h3>
-            <div>
-              <img
-                src="/vision.jpg"
-                alt="Vision Image"
-                className="w-full h-full my-5"
-              />
-            </div>
-            <div className="flex items-center">
-              <p className="text-lg">
+          <div className="md:w-1/2 mb-8 md:mb-0 bg-white rounded-lg shadow-lg overflow-hidden">
+            {/* Image */}
+            <img
+              src="/vision.jpg"
+              alt="Vision Image"
+              className="w-full h-84 object-cover"
+            />
+
+            {/* Content */}
+            <div className="p-6">
+              {/* Title */}
+              <h3 className="text-3xl font-bold mb-4 text-teal-500">
+                Our Vision
+              </h3>
+
+              {/* Description */}
+              <p className="text-lg text-gray-700 leading-relaxed">
                 By 2027, we envision LAGIR as a leading institution in research
                 and facilitation of foreign trade between the Arab world, Latin
                 America & Caribbean, setting an example of synergy and
