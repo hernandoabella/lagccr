@@ -29,7 +29,7 @@ const AboutUsSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold">About Us</h2>
-          <p className="text-lg mt-4">
+          <p className="text-xl mt-4">
             We facilitate efficient trade to improve global trade and drive
             economic growth.
           </p>
