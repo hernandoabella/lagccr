@@ -7,19 +7,19 @@ const ServicesSection = () => {
       title: "Trade Facilitation",
       description:
         "We simplify foreign trade operations, market research, and bilateral relations, fostering international trade and economic growth.",
-      icon: "/trade-research", // Reemplazar con la ruta real del icono
+      icon: "/trade-research", 
     },
     {
       title: "Market Research",
       description:
         "We provide in-depth market research and logistic solutions to stay ahead of economic changes and trade relations.",
-      icon: "/market-research", // Reemplazar con la ruta real del icono
+      icon: "/market-research", 
     },
     {
       title: "Matchmaking",
       description:
         "We focus on creating synergy and identifying partners that align with your goals to promote international trade.",
-      icon: "/match-making.jpg", // Reemplazar con la ruta real del icono
+      icon: "/match-making.jpg", 
     },
   ];
 
@@ -31,7 +31,7 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-gray-100  overflow-hidden shadow-md p-6 text-center"
+              className="bg-gray-100  overflow-hidden  p-6 text-center"
             >
               <img
                 src={service.icon}
