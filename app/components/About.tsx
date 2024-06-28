@@ -1,8 +1,22 @@
 // components/AboutUsSection.tsx
 
 const AboutUsSection = () => {
+  const counters = [
+    {
+      count: "1.5k+",
+      label: "Trade Operations",
+    },
+    {
+      count: "2.2k+",
+      label: "Market Researches",
+    },
+    {
+      count: "900+",
+      label: "Bilateral Relations",
+    },
+  ];
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 shapedividers_com-1700 bg-gradient-to-t from-teal-900 to-teal-500 text-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold">About Us</h2>
@@ -15,7 +29,7 @@ const AboutUsSection = () => {
         <div className="flex flex-col md:flex-row items-center md:justify-between gap-10">
           {/* History */}
           <div className="md:w-1/2 mb-8 md:mb-0">
-            <h3 className="text-3xl font-bold ">Our History</h3>
+            <h3 className="text-3xl font-bold ">History</h3>
             <div>
               <img
                 src="/history.jpg"
@@ -35,7 +49,7 @@ const AboutUsSection = () => {
 
           {/* Vision */}
           <div className="md:w-1/2">
-            <h3 className="text-3xl font-bold ">Our Vision</h3>
+            <h3 className="text-3xl font-bold ">Vision</h3>
             <div>
               <img
                 src="/vision.jpg"
@@ -52,6 +66,18 @@ const AboutUsSection = () => {
               </p>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-6 text-center p-20">
+        <h2 className="text-4xl font-bold mb-12">Achievements</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          {counters.map((counter, index) => (
+            <div key={index} className="overflow-hidden p-6">
+              <h3 className="text-4xl font-bold mb-2 ">{counter.count}</h3>
+              <p className="text-lg ">{counter.label}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
