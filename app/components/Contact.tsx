@@ -67,7 +67,7 @@ const ContactForm = () => {
               ></textarea>
             </div>
             <div className="text-center">
-              <button>
+              <button className="bg-teal-800">
                 <div className="svg-wrapper-1">
                   <div className="svg-wrapper">
                     <svg
