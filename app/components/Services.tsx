@@ -1,5 +1,7 @@
 // components/ServicesSection.tsx
+"use client";
 import { FaTruck, FaChartBar, FaHandshake } from "react-icons/fa";
+import { motion } from "framer-motion"; // Import motion from Framer Motion
 
 const ServicesSection = () => {
   // Datos de los servicios
@@ -30,14 +32,19 @@ const ServicesSection = () => {
         <h2 className="text-4xl font-bold text-center mb-12 text-teal-500">Services</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
           {services.map((service, index) => (
-            <div
+            <motion.div
               key={index}
               className="bg-gray-100 rounded-lg overflow-hidden p-6 text-center"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: index * 0.2 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
             >
               <service.icon className="text-6xl text-teal-500 mx-auto mb-4" />
               <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
               <p className="text-gray-700">{service.description}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
