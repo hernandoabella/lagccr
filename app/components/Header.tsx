@@ -1,6 +1,7 @@
 // components/Header.js
 "use client";
 import { motion } from "framer-motion"; // Import motion from Framer Motion
+import Image from "next/image"; // Import Image component from Next.js
 
 const Header = () => {
   return (
@@ -13,7 +14,9 @@ const Header = () => {
       >
         {/* Logo */}
         <div className="mb-2">
-          <img src="/logo.png" alt="LAGCCR Logo" className="h-60" />
+          <div className="relative h-40 w-80">
+            <Image src="/logo.png" alt="LAGCCR Logo" layout="fill" objectFit="contain" />
+          </div>
         </div>
 
         {/* Navigation */}

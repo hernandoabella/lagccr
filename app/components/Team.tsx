@@ -1,6 +1,7 @@
 // components/TeamSection.tsx
 "use client";
 import { motion } from "framer-motion"; // Import motion from Framer Motion
+import Image from "next/image"; // Import Image from Next.js
 
 const TeamSection = () => {
   // Datos del equipo
@@ -45,11 +46,15 @@ const TeamSection = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <img
-                src={member.image}
-                alt={`${member.name} - ${member.position}`}
-                className="w-full h-64 object-cover object-center"
-              />
+              <div className="relative w-full h-64">
+                <Image
+                  src={member.image}
+                  alt={`${member.name} - ${member.position}`}
+                  layout="fill"
+                  objectFit="cover"
+                  className="object-cover object-center"
+                />
+              </div>
               <div className="p-6 bg-gradient-to-t from-teal-600 via-teal-500 to-teal-600 text-white">
                 <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
                 <p className="text-gray-200 mb-4 text-lg">{member.position}</p>

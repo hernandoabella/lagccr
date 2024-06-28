@@ -1,3 +1,5 @@
+"use client";
+import Image from "next/image";
 import { FaFacebook, FaInstagram, FaTwitter, FaEnvelope } from "react-icons/fa";
 
 const ContactForm = () => {
@@ -8,19 +10,22 @@ const ContactForm = () => {
           Contact Us
         </h2>
         <p className="text-lg mt-4">
-          We'd love to hear from you! Fill out the form below to get in touch
+          We&aposd love to hear from you! Fill out the form below to get in touch
           with us.
         </p>
       </div>
 
-      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center">
+      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center ">
         {/* Sección de la Imagen */}
         <div className="w-full md:w-1/2 mb-12 md:mb-0 md:mr-6">
-          <img
-            src="/contact.jpg"
-            alt="Contact Us"
-            className="w-full rounded-lg shadow-md"
-          />
+          <div className="relative h-96 w-full">
+            <Image
+              src="/contact.jpg"
+              alt="LAGCCR Logo"
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
         </div>
 
         {/* Sección del Formulario */}

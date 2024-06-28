@@ -2,7 +2,7 @@
 "use client";
 import React from "react";
 import { FaCalendarAlt } from "react-icons/fa";
-import TypingEffect from "./TypingEffect";
+import TypingEffect from "@/app/components/typingEffect";
 import Image from "next/image"; // Import Image component from Next.js
 import { motion } from "framer-motion"; // Import motion from Framer Motion
 

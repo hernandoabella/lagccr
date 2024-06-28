@@ -1,7 +1,10 @@
-"use client";
+// components/AboutUsSection.tsx
+"use client"
+
 import { useState } from "react";
 import { FaShippingFast, FaSearchDollar, FaHandshake } from "react-icons/fa";
 import CountUp from "react-countup";
+import Image from "next/image"; // Import Image component from Next.js
 
 const AboutUsSection = () => {
   const counters = [
@@ -39,11 +42,15 @@ const AboutUsSection = () => {
           {/* History */}
           <div className="md:w-1/2 mb-8 md:mb-0 bg-white rounded-lg shadow-lg overflow-hidden">
             {/* Image */}
-            <img
-              src="/history.jpg"
-              alt="History Image"
-              className="w-full h-84 object-cover"
-            />
+            <div className="relative w-full h-84">
+              <Image
+                src="/history.jpg"
+                alt="History Image"
+                layout="fill"
+                objectFit="cover"
+                className="object-cover"
+              />
+            </div>
 
             {/* Content */}
             <div className="p-6">
@@ -65,11 +72,15 @@ const AboutUsSection = () => {
           {/* Vision */}
           <div className="md:w-1/2 mb-8 md:mb-0 bg-white rounded-lg shadow-lg overflow-hidden">
             {/* Image */}
-            <img
-              src="/vision.jpg"
-              alt="Vision Image"
-              className="w-full h-84 object-cover"
-            />
+            <div className="relative w-full h-84">
+              <Image
+                src="/vision.jpg"
+                alt="Vision Image"
+                layout="fill"
+                objectFit="cover"
+                className="object-cover"
+              />
+            </div>
 
             {/* Content */}
             <div className="p-6">
