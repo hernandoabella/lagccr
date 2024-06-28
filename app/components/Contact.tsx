@@ -17,7 +17,7 @@ const ContactForm = () => {
         {/* Sección de la Imagen */}
         <div className="w-full md:w-1/2 mb-12 md:mb-0 md:mr-6">
           <img
-            src="/path/to/your/image.jpg" // Reemplaza con la ruta real de tu imagen
+            src="/contact.jpg"
             alt="Contact Us"
             className="w-full rounded-lg shadow-md"
           />
@@ -93,9 +93,7 @@ const ContactForm = () => {
 
       <div className="py-8">
         <div className="container mx-auto text-center">
-          <p className="mb-4">
-            © Copyright. All rights reserved.
-          </p>
+          <p className="mb-4">© Copyright. All rights reserved.</p>
           <div className="flex justify-center space-x-6">
             <a
               href="https://facebook.com"
@@ -121,10 +119,7 @@ const ContactForm = () => {
             >
               <FaTwitter size={24} />
             </a>
-            <a
-              href="mailto:info@example.com"
-              className=""
-            >
+            <a href="mailto:info@example.com" className="">
               <FaEnvelope size={24} />
             </a>
           </div>
