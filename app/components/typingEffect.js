@@ -6,7 +6,7 @@ import Typewriter from 'typewriter-effect';
 const TypingEffect = () => {
     return (
         <div className="typing-effect">
-            <h1 className="font-bold text-8xl mb-6">
+            <h1 className="ffont-bold text-4xl sm:text-6xl md:text-7xl lg:text-8xl mb-6 text-black">
                 <Typewriter
                     options={{
                         strings: [
