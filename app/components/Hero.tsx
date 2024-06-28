@@ -2,9 +2,9 @@
 "use client";
 import React from "react";
 import { FaCalendarAlt } from "react-icons/fa";
-import TypingEffect from "@/app/components/typingEffect";
 import Image from "next/image"; // Import Image component from Next.js
 import { motion } from "framer-motion"; // Import motion from Framer Motion
+import Typewriter from 'typewriter-effect';
 
 const HeroSection = () => {
   return (
@@ -16,7 +16,25 @@ const HeroSection = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <TypingEffect />
+          <div className="typing-effect">
+            <h1 className="font-bold text-4xl sm:text-6xl md:text-7xl lg:text-8xl mb-6 text-black">
+                <Typewriter
+                    options={{
+                        strings: [
+                            'Trade Facilitation',
+                            'تسهيل التجارة',
+                            'Facilitación del comercio',
+                            'Facilitação do comércio',
+                            'การให้บริการในการค้า',
+                        ],
+                        autoStart: true,
+                        loop: true,
+                        delay: 'natural',
+                        deleteSpeed: 'natural',
+                    }}
+                /></h1>
+
+        </div>
           <p className="mb-4 text-xl text-black">
             Our organization makes it easy for your foreign trade operations,
             market research, and bilateral relations.
