@@ -1,9 +1,10 @@
-import React from 'react'
+// components/Footer.tsx
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <div></div>
+    
+  );
+};
 
-export default Footer
+export default Footer;
