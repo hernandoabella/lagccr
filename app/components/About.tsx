@@ -110,7 +110,7 @@ const AboutUsSection = () => {
               <CountUp
                 start={isAnimated ? 0 : undefined}
                 end={counter.count}
-                duration={15}
+                duration={5}
                 redraw={true}
                 suffix="+"
               >
